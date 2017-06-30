@@ -43,6 +43,16 @@ This project consist of 3 parts, which are:
 * https://docs.python.org/3/
 * https://docs.python.org/2/
 
+## Contribute
+
+Want to work on the project? Any kind of contribution is welcome!
+
+Follow these steps:
+- Fork the project.
+- Create a new branch.
+- Make your changes and write tests when practical.
+- Commit your changes to the new branch.
+- Send a pull request.
 
 ## Authors
 
