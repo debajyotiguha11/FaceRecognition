@@ -12,7 +12,7 @@ detector= cv2.CascadeClassifier("haarcascade_frontalface_default.xml");
 def getImages(path):
     #get the path of all the files in the folder
     imagePaths=[os.path.join(path,f) for f in os.listdir(path)] 
-    #create empth face list
+    #create empty face list
     faceSamples=[]
     #create empty ID list
     Ids=[]
