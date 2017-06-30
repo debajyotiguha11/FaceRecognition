@@ -25,7 +25,7 @@ This project consist of 3 parts, which are:
 
 ### Installing
 
-* Create an empty Folder named **"dataSets"** in the same directory where the python scripts are 
+* Create an empty Folder named **"datasets"** in the same directory where the python scripts are 
 * Create an empty folder called **iamgeloader** In same directory 
 
 ## Running the tests
