@@ -26,7 +26,7 @@ This project consist of 3 parts, which are:
 ### Installing
 
 * Create an empty Folder named **"datasets"** in the same directory where the python scripts are 
-* Create an empty folder called **iamgeloader** In same directory 
+* Create an empty folder called **"iamgeloader"** In same directory 
 
 ## Running the tests
 
@@ -38,6 +38,9 @@ This project consist of 3 parts, which are:
 ## HelpFull Links
 
 https://github.com/debajyotiguha11/opencv/
+https://www.python.org/about/gettingstarted/
+https://docs.python.org/3/
+https://docs.python.org/2/
 
 
 ## Authors
