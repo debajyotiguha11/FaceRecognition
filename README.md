@@ -38,6 +38,7 @@ This project consist of 3 parts, which are:
 ## HelpFull Links
 
 * https://github.com/debajyotiguha11/opencv/
+* https://github.com/debajyotiguha11/opencv/tree/master/data/haarcascades
 * https://www.python.org/about/gettingstarted/
 * https://docs.python.org/3/
 * https://docs.python.org/2/
