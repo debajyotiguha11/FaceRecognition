@@ -8,7 +8,7 @@ import numpy as np
 recognizer = cv2.face.createLBPHFaceRecognizer()
 
 # Load the imageloader module
-recognizer.load('imageloader/imageloader.yml')
+recognizer.load('trainner/trainner.yml')
 
 # Load prebuilt model for Frontal Face
 cascadePath = "haarcascade_frontalface_default.xml"
@@ -31,21 +31,21 @@ while True:
     gray = cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
 
     # Get all face from the video frame
-    faces = faceCascade.detectMultiScale(gray, 1.2,5)
+    faces = faceCascade.detectMultiScale(gray, 1.3,5)
 
     # For each face in faces
     for(x,y,w,h) in faces:
 
         # Create rectangle around the face
-        cv2.rectangle(im, (x-20,y-20), (x+w+20,y+h+20), (0,255,0), 4)
+        cv2.rectangle(im, (x-20,y-20), (x+w+20,y+h+20), (0,255,0),2)
 
         # Recognize the face belongs to which ID
         Id = recognizer.predict(gray[y:y+h,x:x+w])
 
         # Check the ID if exist 
         if(Id == 1):
-            Id = "Debjyoti"
-		elif(Id==2):
+            Id = "Yourname"
+	elif(Id==2):
                 Id="Friend"
         #If not exist, then it is Unknown
         else:
@@ -53,7 +53,7 @@ while True:
 
         # Put text describe who is in the picture
         cv2.rectangle(im, (x-22,y-90), (x+w+22, y-22), (0,255,0), -1)
-        cv2.putText(im, str(Id), (x,y-40), font, 2, (255,255,255), 3)
+        cv2.putText(im, str(Id), (x,y-40), font, 2, (0,255,0), 3)
 
     # Display the video frame with the bounded rectangle
     cv2.imshow('Face_Recognition',im) 

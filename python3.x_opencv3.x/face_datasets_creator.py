@@ -8,7 +8,7 @@ vid_cam = cv2.VideoCapture(0)
 face_detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # Unique id for each person
-face_id = input("enter your id: \n")
+face_id = input("Please Enter your ID[eg:-1,2,3...]: \n")
 
 # Initialize sample face image
 count = 0
@@ -29,13 +29,13 @@ while(True):
     for (x,y,w,h) in faces:
 
         # Crop the image frame into rectangle
-        cv2.rectangle(image_frame, (x,y), (x+w,y+h), (255,0,0), 2)
+        cv2.rectangle(image_frame, (x,y), (x+w,y+h), (0,255,0),2)
         
         # Increment sample face image
         count += 1
 
         # Save the captured image into the datasets folder
-        cv2.imwrite("datasets/User." + str(face_id) + '.' + str(count) + ".jpg", gray[y:y+h,x:x+w])
+        cv2.imwrite("dataSet/User." + str(face_id) + '.' + str(count) + ".jpg", gray[y:y+h,x:x+w])
 
         # Display the video frame, with bounded rectangle on the person's face
         cv2.imshow('Dataset_Creator', image_frame)
@@ -44,7 +44,7 @@ while(True):
     if cv2.waitKey(100) & 0xFF == ord('q'):
         break
 
-    # If image taken reach 100, stop taking video
+    # If image taken reach 50, stop taking video
     elif count==50:
         break
 
