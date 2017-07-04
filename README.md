@@ -1,5 +1,5 @@
-# Simple OpenCV Face Recognition using Haar-Cascade Classifier, Python2 (OR) Python3
-
+# FaceRecognition
+Simple OpenCV Face Recognition using Haar-Cascade Classifier, Python2 (OR) Python3
 
 Face Recognition tutorial refference CommingSoon http://coders.uphero.com/ 
 
