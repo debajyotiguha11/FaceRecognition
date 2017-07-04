@@ -11,7 +11,7 @@ Face Recognition tutorial refference CommingSoon http://coders.uphero.com/
 * Python 3.x
 * OpenCV 3.x
 
-Python Lybrary:
+Python Library:
 * cv2
 * os
 * Numpy
